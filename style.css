@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f5efe6;
+    color: #3a2a23;
+  }
+
+  .sidebar {
+    width: 20%;
+    height: 100vh;
+    background-color: #d7b89e;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+  }
+
+  .sidebar img {
+    width: 60px;
+    margin-bottom: 20px;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: #3a2a23;
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .sidebar a:hover {
+    color: #ffffff;
+  }
+
+  .main {
+    margin-left: 20%;
+    padding: 20px;
+  }
+
+  .hero {
+    text-align: center;
+    background-image: url("images/coffee.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    position: relative;
+  }
+
+ 
+  .hero-content {
+    position: relative;
+    z-index: 2;
+  }
+
+  .hero h1 {
+    font-size: 48px;
+    margin: 0;
+  }
+
+  .hero p {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .hero .shop-btn {
+    background-color: #d7b89e;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+
+  .products {
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .products h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
+  .product-list {
+    display: flex;
+    justify-content: center;
+  }
+
+  .product {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    margin-right:20px;
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .product h3 {
+    margin: 10px 0;
+    font-size: 18px;
+  }
