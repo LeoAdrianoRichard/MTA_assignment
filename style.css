@@ -6,28 +6,37 @@ body {
 }
 
 .topnav {
+  align-items: center;
   overflow: hidden;
   background-color: #d7b89e;
 }
 
+.logo{
+  display: flex;
+  justify-content: left;
+}
+
 .topnav img {
   width: 60px;
-  margin-bottom: 20px;
+  /*margin-bottom: 20px;*/
 }
 
 .topnav a {
   float: left;
-  display: block;
   color: #3a2a23;
   text-align: center;
+
   padding: 14px 16px;
+  /*margin: 20px 5%;*/
+    
   text-decoration: none;
   font-size: 17px;
 }
-  
-  
+
 .topnav a:hover {
   color: #ffffff;
+  display: block;
+  background-color:blue;
 }
 
 .topnav a.icon {
@@ -57,13 +66,13 @@ body {
   }
 }
 
-.main {
-  margin-left: 20%;
-  padding: 20px;
+.header {
+  margin: 5px;
+  padding: 5px;
 }
 
 
-.hero {
+.main {
   text-align: center;
   background-image: url("images/coffee.jpg");
   background-size: cover;
@@ -72,67 +81,64 @@ body {
   padding: 100px 20px;
   position: relative;
 }
-  
 
  
-.hero-content {
+.main-content {
   position: relative;
   z-index: 2;
 }
 
-
-.hero h1 {
+.main h1 {
   font-size: 48px;
   margin: 0;
 }
 
+.main p {
+  font-size: 18px;
+  margin-top: 10px;
+}
 
-  .hero p {
-    font-size: 18px;
-    margin-top: 10px;
-  }
+.main .shop-btn {
+  background-color: #d7b89e;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
 
-  .hero .shop-btn {
-    background-color: #d7b89e;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin-top: 20px;
-  }
+.products {
+  text-align: center;
+  margin-top: 40px;
+}
 
-  .products {
-    text-align: center;
-    margin-top: 40px;
-  }
+.products h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+  
+.product-list {
+  display: flex;
+  justify-content: center;
+}
 
-  .products h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-  }
+.product {
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right:20px;
+}
 
-  .product-list {
-    display: flex;
-    justify-content: center;
-  }
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}  
 
-  .product {
-    background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    width: 200px;
-    text-align: center;
-    border-radius: 10px;
-    margin-right:20px;
-  }
-
-  .product img {
-    width: 100%;
-    border-radius: 10px;
-  }
-
-  .product h3 {
-    margin: 10px 0;
-    font-size: 18px;
-  }
+.product h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
