@@ -34,6 +34,7 @@ body {
 }
 
 .topnav a.right-nav {
+  float: right;
   font-family: "Montserrat", serif;
   padding: 23px 16px;
 }
