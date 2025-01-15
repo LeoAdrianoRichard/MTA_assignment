@@ -45,6 +45,12 @@ body {
   background-color:blue;
 }
 
+.topnav a.active {
+  background-color: #b08872; 
+  color: #fff;  
+  border-radius: 4px; 
+}
+
 .topnav a.icon {
   display: none;
 }
@@ -197,5 +203,58 @@ body {
 .product h3 {
   margin: 10px 0;
   font-size: 18px;
+}
+
+.menus{
+  text-align:center;
+  margin-top:30px;
+  font-family:'Playfair Display',serif;
+}
+
+.menu-list{
+  display:flex;
+  justify-content:center;
+}
+
+.menu{
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  margin-right:20px;
+}
+
+.menu img{
+  width:100%;
+  border-radius: 20px;
+}
+
+.menu:hover{
+  transform:translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.hero-image
+{
+  position: relative;
+  background-image:url('images/hero.jpg'); /* Replace with your hero image path */
+  background-size: cover;
+  background-position: center;
+  height: 408px; 
+}
+
+.hero-text
+{
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position:absolute;
+  color:white;
+}
+
+.hero-text h1{
+  font-size:40px;
 }
 /*test code to check git*/
