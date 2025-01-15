@@ -39,16 +39,38 @@
     <div class="hero-image">
       <div class="hero-text">
         <h1>Our Menu</h1>
+        <p>
+          We offer a wide variety of beverages at Monti Keopi, ensuring there's
+          something for everyone to enjoy
+        </p>
       </div>
     </div>
     <div class="menus">
-      <div class="menu-list">
-        <div class="menu">
+      <div class="menu-list" >
+        <div class="menu" onclick="displayMenu('latte-image')">
           <img src="images/latte-removebg.png" alt="Latte" />
           <h3>Monti Specialty Coffee</h3>
         </div>
-        <div class="menu"></div>
-      </div>
+        <div class="menu" onclick="displayMenu('signature')">
+          <img src="images/Signature.png" alt="Signature" />
+          <h3>Monti Signature Fancy</h3>
+        </div>
+        <div class="menu" onclick="displayMenu('fresher')">
+          <img src="images/fresher.png" alt="Fresher" />
+          <h3>Fresher</h3>
+        </div>
+        <div class="menu" onclick="displayMenu('coffee-free')">
+          <img src="images/coffee-free.png" alt="Coffee-free" />
+          <h3>Coffee Free</h3>
+        </div>
+        <div class="menu" onclick="displayMenu('frappe')">
+          <img src="images/MontiFrappe.png" alt="Frappe" />
+          <h3>MontiFrappe</h3>
+        </div>
+        
+        <img id="menu-image" style="display: none; width: 100%; margin-top: 20px;" alt="Menu Image" />
+          
     </div>
+    <script src="main.js"></script>
   </body>
 </html>
