@@ -1,3 +1,9 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
@@ -10,12 +16,18 @@ body {
   align-items: center;
   overflow: hidden;
   background-color: #E0DCD6;
-  transition: max-height 0.3s ease-in-out;
+  transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   max-height: 70px;
+  opacity: 1;
 }
 
 .topnav.responsive{
   max-height: 330px;
+  opacity: 1;
+}
+
+.topnav.closing{
+  opacity: 0;
 }
 
 .logo{
@@ -100,6 +112,7 @@ body {
   color: white;
   /*padding: 100px 20px;*/
   position: relative;
+  overflow: hidden;
 }
 
 .mySlides {
@@ -107,16 +120,48 @@ body {
 }
 
 .slideshow-container img {
-  vertical-align: middle;
   max-width: 100%;
-  height: 325px;
+  display: block;
+  height: auto;
 }
 
 .slideshow-container {
-  max-height: 100px;
+  max-height: 500px;
   width: 100%; 
   position: relative;
   margin: auto;
+}
+
+.prev,.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev{
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .numbertext {
@@ -157,17 +202,28 @@ body {
 }
  
 .main-content {
-  position: relative;
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  width: 50%;
+  text-align: center;
   z-index: 2;
 }
 
+@media screen and (max-width: 600px) {
+  .main-content {
+    top: 25%;
+    /* Adjust width for smaller screens */
+  }  
+}
+
 .main h1 {
-  font-size: 48px;
+  font-size: clamp(2rem, 5vw, 4rem);
   margin: 0;
 }
 
 .main p {
-  font-size: 18px;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
   margin-top: 10px;
 }
 
@@ -322,4 +378,9 @@ body {
     width: 100%;
     max-width: 400px;
   }
+}
+
+.video-holder{
+  position: relative;
+  left: 31%;
 }
