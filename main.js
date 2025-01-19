@@ -1,33 +1,68 @@
 function myFunction() {
   var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
+
+  if (x.classList.contains("responsive")) {
+    x.classList.add("closing");
+    setTimeout(() => {
+      x.classList.remove("responsive", "closing");
+    }, 300); 
   } else {
-    x.className = "topnav";
+    x.classList.remove("closing");
+    x.classList.add("responsive");
   }
 }
 
 let slideIndex = 0;
-showSlides();
+let slideshowTimer; 
 
 function showSlides() {
-    let i;
     let slides = document.getElementsByClassName("mySlides");
     let dots = document.getElementsByClassName("dot");
-    for (i=0; i<slides.length; i++){
+    
+    for (let i = 0; i < slides.length; i++) {
         slides[i].style.display = "none";
     }
-
+    
     slideIndex++;
-    if (slideIndex > slides.length) {slideIndex = 1}
-    for (i=0; i<dots.length; i++){
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    }
+    
+    for (let i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active", "");
     }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    setTimeout(showSlides, 2000); // Change image every 2 seconds
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    
+    slideshowTimer = setTimeout(showSlides, 5000); 
 }
 
+function plusSlides(n) {
+    clearTimeout(slideshowTimer); 
+    
+    slideIndex += n;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("dot");
+
+    if (slideIndex > slides.length) {
+        slideIndex = 1;
+    } else if (slideIndex < 1) {
+        slideIndex = slides.length;
+    }
+    
+    for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    }
+    for (let i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+    
+    slideshowTimer = setTimeout(showSlides, 5000); // Restart after 5 seconds
+}
+
+showSlides();
 
 function displayMenu(imageId) {
   const menuImage = document.getElementById("menu-image");
