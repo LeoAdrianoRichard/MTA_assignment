@@ -67,19 +67,30 @@ showSlides();
 function displayMenu(imageId) {
   const menuImage = document.getElementById("menu-image");
   const images = {
-    "latte-image": "images/latte-removebg.png",
-    "signature": "images/Signature.png",
-    "fresher": "images/fresher.png",
-    "coffee-free": "images/coffee-free.png",
-    "frappe": "images/MontiFrappe.png"
+    "latte-image": "images/Menu 1.png",
+    "signature": "images/Menu 2.png",
+    "fresher": "images/Menu 3.png",
+    "chocolate": "images/Menu 4.png",
+    "tea": "images/Menu 5.png"
   };
 
-  // Check if the imageId exists in the images object
+  // Update the displayed image
   if (images[imageId]) {
-    // Set the source of the image to the corresponding one from the images object
     menuImage.src = images[imageId];
     menuImage.style.display = "block"; // Make the image visible
   } else {
     console.error("Image not found for id: " + imageId);
   }
+
+// Highlight the clicked menu category
+const menus = document.querySelectorAll(".menu"); // Select all menu items
+menus.forEach((menu) => {
+  menu.classList.remove("clicked"); 
+});
+
+
+const clickedMenu = document.querySelector(`[onclick="displayMenu('${imageId}')"]`);
+if (clickedMenu) {
+  clickedMenu.classList.add("clicked");
+}
 }
