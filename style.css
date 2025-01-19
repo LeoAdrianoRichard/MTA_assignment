@@ -294,7 +294,7 @@ body {
 #menu-image {
   display: none;
   width: 80%;  /* Limit the width of the displayed image */
-  margin-top: 20px;
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
