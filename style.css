@@ -1,4 +1,4 @@
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -7,30 +7,30 @@
 body {
   margin: 0;
   font-family: "Arial", sans-serif;
-  background-color: #F9F5F0;
+  background-color: #f9f5f0;
   /*color: #3a2a23;*/
-  overflow-y:auto;
+  overflow-y: auto;
 }
 
 .topnav {
   align-items: center;
   overflow: hidden;
-  background-color: #E0DCD6;
+  background-color: #e0dcd6;
   transition: max-height 0.3s ease-in-out, opacity 0.3s ease-in-out;
   max-height: 70px;
   opacity: 1;
 }
 
-.topnav.responsive{
+.topnav.responsive {
   max-height: 330px;
   opacity: 1;
 }
 
-.topnav.closing{
+.topnav.closing {
   opacity: 0;
 }
 
-.logo{
+.logo {
   display: flex;
   justify-content: left;
 }
@@ -42,12 +42,12 @@ body {
 
 .topnav a {
   float: left;
-  color: #24211E;
+  color: #24211e;
   text-align: center;
 
   padding: 14px 16px;
   /*margin: 20px 5%;*/
-    
+
   text-decoration: none;
   font-size: 16px;
 }
@@ -59,14 +59,14 @@ body {
 }
 
 .topnav a:hover {
-  color: #A68061;
+  color: #a68061;
   display: block;
 }
 
 .topnav a.active {
-  background-color: #b08872; 
-  color: #fff;  
-  border-radius: 4px; 
+  background-color: #b08872;
+  color: #fff;
+  border-radius: 4px;
 }
 
 .topnav a.icon {
@@ -74,21 +74,24 @@ body {
   padding: 15px 16px;
 }
 
-.topnav a.icon:hover{
-  color:white;
+.topnav a.icon:hover {
+  color: white;
 }
 
 @media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
+  .topnav a:not(:first-child) {
+    display: none;
+  }
   .topnav a.icon {
     float: right;
     display: block;
   }
 }
 
-
-@media screen and (max-width:600px) {
-  .topnav.responsive {position: relative;}
+@media screen and (max-width: 600px) {
+  .topnav.responsive {
+    position: relative;
+  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -105,7 +108,6 @@ body {
   margin: 3px;
   padding: 1px;
 }
-
 
 .main {
   text-align: center;
@@ -127,12 +129,13 @@ body {
 
 .slideshow-container {
   max-height: 500px;
-  width: 100%; 
+  width: 100%;
   position: relative;
   margin: auto;
 }
 
-.prev,.next {
+.prev,
+.next {
   cursor: pointer;
   position: absolute;
   top: 50%;
@@ -153,7 +156,7 @@ body {
   border-radius: 3px 0 0 3px;
 }
 
-.prev{
+.prev {
   left: 0;
   border-radius: 3px 0 0 3px;
 }
@@ -182,7 +185,6 @@ body {
   transition: background-color 0.6s ease;
 }
 
-
 .active {
   background-color: #717171;
 }
@@ -193,14 +195,20 @@ body {
 }
 
 @keyframes fade {
-  from{opacity: .4;}
-  to{opacity: 1;}
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-@media only screen and (max-width:300px){
-  .text{font-size: 11px;}
+@media only screen and (max-width: 300px) {
+  .text {
+    font-size: 11px;
+  }
 }
- 
+
 .main-content {
   position: absolute;
   top: 40%;
@@ -214,7 +222,7 @@ body {
   .main-content {
     top: 25%;
     /* Adjust width for smaller screens */
-  }  
+  }
 }
 
 .main h1 {
@@ -246,7 +254,7 @@ body {
   font-size: 32px;
   margin-bottom: 20px;
 }
-  
+
 .product-list {
   display: flex;
   justify-content: center;
@@ -259,32 +267,31 @@ body {
   width: 200px;
   text-align: center;
   border-radius: 10px;
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 .product img {
   width: 100%;
   border-radius: 10px;
-}  
+}
 
 .product h3 {
   margin: 10px 0;
   font-size: 18px;
 }
 
-.menus
-{
-  align:center;
-  margin-top:40px;
+.menus {
+  align: center;
+  margin-top: 40px;
 }
 
 .menu-list {
   display: flex;
   justify-content: center;
-  flex-wrap:wrap;
-  gap: 15px; 
+  flex-wrap: wrap;
+  gap: 15px;
   margin-bottom: 20px;
-  margin-top:20px;
+  margin-top: 20px;
 }
 
 .menu {
@@ -294,14 +301,14 @@ body {
   width: 150px;
   text-align: center;
   border-radius: 10px;
-  margin-right:20px;
+  margin-right: 20px;
 }
 
 .menu img {
   width: 100%;
-  height:auto;
+  height: auto;
   border-radius: 10px;
-}  
+}
 
 .menu h3 {
   margin: 10px 0;
@@ -314,7 +321,7 @@ body {
 }
 
 .hero-image {
-  background-image: url('images/hero.jpg'); /* Ensure the file path is correct */
+  background-image: url("images/hero.jpg"); /* Ensure the file path is correct */
   height: 400px; /* Set a fixed height for better visibility */
   background-position: center;
   background-repeat: no-repeat;
@@ -329,7 +336,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
@@ -337,7 +344,7 @@ body {
   font-size: 48px; /* Adjust size as needed */
   font-weight: 800; /* Bold and impactful */
   letter-spacing: -1px; /* Slight negative spacing for tighter look */
-  line-height: 1.2; 
+  line-height: 1.2;
   margin: 0;
 }
 
@@ -349,7 +356,7 @@ body {
 
 #menu-image {
   display: none;
-  width: 80%;  /* Limit the width of the displayed image */
+  width: 80%; /* Limit the width of the displayed image */
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -358,10 +365,9 @@ body {
 
 @media screen and (max-width: 768px) {
   .menu {
-    width: 45%; 
+    width: 45%;
   }
 
-  
   #menu-image {
     width: 70%;
     max-width: 500px;
@@ -380,7 +386,7 @@ body {
   }
 }
 
-.video-holder{
+.video-holder {
   position: relative;
   left: 31%;
 }
