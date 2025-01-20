@@ -15,13 +15,15 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet">
   </head>
 
   <body>
     <div class="topnav" id="myTopnav">
-      <a href="main.html" class="home"
-        ><img src="images/purelogo-test.png" alt="Logo"
-      /></a>
+      <a href="main.html" class="home"><img src="images/purelogo-test.png" alt="Logo"/></a>
 
       <!--# are meant for link placement-->
       <a href="about.html" class="right-nav">About Us</a>
@@ -74,24 +76,6 @@
           <span class="dot"></span>
         </div>
       </div>
-
-      <div class="products">
-        <h2>Our Hot Products</h2>
-        <div class="product-list">
-          <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Black Coffee" />
-            <h3>Black Coffee</h3>
-          </div>
-          <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Hot Coffee" />
-            <h3>Hot Coffee</h3>
-          </div>
-          <div class="product">
-            <img src="https://via.placeholder.com/200" alt="Dark Coffee" />
-            <h3>Dark Coffee</h3>
-          </div>
-        </div>
-      </div>
     </div>
 
     <iframe
@@ -103,10 +87,36 @@
     </iframe>
 
     <footer>
-      <p>
-        Author: Hege Refsnes<br />
-        <a href="mailto:hege@example.com">hege@example.com</a>
-      </p>
+      <div class="footer-container">
+        <div class="footer-left">
+          <a href="main.html" class="footer-home"><img src="images/purelogofull.png" alt="Logo" /></a>
+        </div>
+        <div class="footer-center">
+          <h4>Solutions</h4>
+          <ul>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a
+                href="https://food.grab.com/my/en/restaurant/monti-keopi-universiti-malaya-delivery/1-C6EVVEDUN8AHEE?">Shop</a>
+            </li>
+            <li><a href="#">Locate Us</a></li>
+            <li><a href="#">About Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-right">
+          <h4>Contact Us</h4>
+          <p><a href="#">Email Us</a></p>
+          <p><a href="#">Partners Program</a></p>
+          <div class="social-icons">
+            <a href="#" class="social-icon"><img src="images/facebook.ico" alt="Logo" /></a>
+            <a href="#" class="social-icon"><img src="images/instagram.ico" alt="Logo" /></a>
+            <a href="#" class="social-icon"><img src="images/tiktok.ico" alt="Logo" /></a>
+            <a href="#" class="social-icon"><img src="images/whatsapp.ico" alt="Logo" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 Monti Keopi. All rights reserved. | <a href="#">Privacy Policy</a></p>
+      </div>
     </footer>
 
     <script src="main.js"></script>
