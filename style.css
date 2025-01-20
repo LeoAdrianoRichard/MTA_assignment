@@ -9,6 +9,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #f9f5f0;
   /*color: #3a2a23;*/
+  height:100%;
   overflow-y: auto;
 }
 
@@ -344,21 +345,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Playfair Display", serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
 }
 
 .hero-text h1 {
-  font-size: 48px; /* Adjust size as needed */
-  font-weight: 800; /* Bold and impactful */
+  font-size: 40px; /* Adjust size as needed */
+  font-family: "Montserrat", sans-serif;
   letter-spacing: -1px; /* Slight negative spacing for tighter look */
   line-height: 1.2;
   margin: 0;
+  font-weight:400px;
 }
 
 .hero-text p {
   font-size: 1.2rem; /* Smaller, supporting text */
-  font-weight: 400; /* Regular weight */
+  font-weight: 300; /* Regular weight */
   margin-top: 10px;
 }
 
