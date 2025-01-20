@@ -543,7 +543,7 @@ footer a:hover{
 }
 
 
-button {
+.button-container button {
   display: block;
   width: 480px; /* Reduce button size for better spacing */
   background: linear-gradient(to right, #A68061, #d7b89e);
@@ -559,7 +559,7 @@ button {
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
-button:hover {
+.button-container button:hover {
   background: #A68061;
   transform: scale(1.05); /* Subtle zoom effect */
 }
@@ -568,3 +568,4 @@ button:hover {
 background: linear-gradient(to bottom, #f9f5f0 80%, #a68061);
 
 }
+ 
