@@ -12,10 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
@@ -28,55 +24,27 @@
 
       <!--# are meant for link placement-->
       <a href="about.html" class="right-nav">About Us</a>
-      <a href="location.html" class="right-nav">Location</a>
+      <a href="location.html" class="right-nav active">Location</a>
       <a
         href="https://food.grab.com/my/en/restaurant/monti-keopi-universiti-malaya-delivery/1-C6EVVEDUN8AHEE?"
         class="right-nav"
         >Shop</a
       >
-      <a href="menu.html" class="right-nav active">Menu</a>
+      <a href="menu.html" class="right-nav">Menu</a>
       <a href="javascript:void(0)" class="icon" onclick="myFunction()">
         <i class="fa fa-bars" style="font-size: 25px; padding: 5px 16px"></i>
       </a>
     </div>
 
-    <div class="hero-image">
-      <div class="hero-text">
-        <h1>Our Menu</h1>
-        <p>
-          We offer a wide variety of beverages at Monti Keopi, ensuring there's
-          something for everyone to enjoy
-        </p>
+    <div class="button-container">
+      <div>
+        <img src="images/logo.png" alt="logo" />
+        <h1>Monti Keopi</h1>
+        <p>Come and grab your drinks now at Monti Keopi!</p>
       </div>
+      <button onclick="openGoogleMaps()">Google Maps</button>
+      <button onclick="openWaze()">Waze</button>
     </div>
-    <div class="menus">
-      <div class="menu-list">
-        <div class="menu" onclick="displayMenu('latte-image')">
-          <h3>Monti Specialty Coffee</h3>
-        </div>
-        <div class="menu" onclick="displayMenu('signature')">
-          <h3>Monti Signature Fancy</h3>
-        </div>
-        <div class="menu" onclick="displayMenu('fresher')">
-          <h3>Fresher</h3>
-        </div>
-        <div class="menu" onclick="displayMenu('chocolate')">
-          <h3>Chocolate</h3>
-        </div>
-        <div class="menu" onclick="displayMenu('tea')">
-          <h3>Tea</h3>
-        </div>
-      </div>
-      <img id="menu-image" src="images/Menu 1.png" alt="Menu Image" />
-    </div>
-
-    <footer>
-      <p>
-        Author: Hege Refsnes<br />
-        <a href="mailto:hege@example.com">hege@example.com</a>
-      </p>
-    </footer>
-
     <script src="main.js"></script>
   </body>
 </html>
