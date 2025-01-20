@@ -9,6 +9,7 @@ body {
   font-family: "Arial", sans-serif;
   background-color: #f9f5f0;
   /*color: #3a2a23;*/
+  height:100%;
   overflow-y: auto;
 }
 
@@ -344,21 +345,21 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
-  font-family: "Playfair Display", serif;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  
 }
 
 .hero-text h1 {
-  font-size: 48px; /* Adjust size as needed */
-  font-weight: 800; /* Bold and impactful */
+  font-size: 40px; /* Adjust size as needed */
+  font-family: "Montserrat", sans-serif;
   letter-spacing: -1px; /* Slight negative spacing for tighter look */
   line-height: 1.2;
   margin: 0;
+  font-weight:400px;
 }
 
 .hero-text p {
   font-size: 1.2rem; /* Smaller, supporting text */
-  font-weight: 400; /* Regular weight */
+  font-weight: 300; /* Regular weight */
   margin-top: 10px;
 }
 
@@ -396,14 +397,18 @@ body {
   }
 }
 
-.video-holder{
-  /*position: relative;
-  left: 5%;*/
-  position: relative;
-  top: 50%;
-  left: 28%;
+.video-holder {
+  display: grid;
+  place-items: center;
+  padding: 20px 20px;
   text-align: center;
-  font-size: 18px;
+}
+
+iframe {
+  max-width: 100%;
+  /* Ensures the iframe is responsive */
+  max-height: 100%;
+  /* Keeps the aspect ratio intact */
 }
 
 footer {
@@ -543,7 +548,7 @@ footer a:hover{
 }
 
 
-button {
+.button-container button {
   display: block;
   width: 480px; /* Reduce button size for better spacing */
   background: linear-gradient(to right, #A68061, #d7b89e);
@@ -559,7 +564,7 @@ button {
   transition: transform 0.2s ease, background 0.3s ease;
 }
 
-button:hover {
+.button-container button:hover {
   background: #A68061;
   transform: scale(1.05); /* Subtle zoom effect */
 }
@@ -568,3 +573,4 @@ button:hover {
 background: linear-gradient(to bottom, #f9f5f0 80%, #a68061);
 
 }
+ 
