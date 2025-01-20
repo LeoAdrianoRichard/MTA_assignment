@@ -94,3 +94,13 @@ if (clickedMenu) {
   clickedMenu.classList.add("clicked");
 }
 }
+
+function openGoogleMaps() {
+  const googleMapsUrl = "https://www.google.com/maps/dir/2.9488407,101.6649714/Monti+Keopi+MMU+Cyberjaya/@2.9386109,101.6331108,14z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x31cdb741989d890d:0x2d056bbdc4d5748!2m2!1d101.6431261!2d2.9277726!3e0?entry=ttu&g_ep=EgoyMDI1MDExNS4wIKXMDSoASAFQAw%3D%3D"; // Replace with your specific URL
+  window.open(googleMapsUrl, "_blank");
+}
+
+function openWaze() {
+  const wazeUrl = "https://www.waze.com/live-map/directions/my/selangor/cyberjaya/mmu-starbees?to=place.ChIJv99qLzq3zTERhrQ-fWEjXuo"; // Replace with your specific URL
+  window.open(wazeUrl, "_blank");
+}

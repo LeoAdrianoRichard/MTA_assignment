@@ -510,3 +510,61 @@ footer a:hover{
 .footer-bottom a:hover {
   text-decoration: underline;
 }
+
+.button-container {
+  margin-top: 20px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align:center;
+  height:100%px;
+}
+
+.button-container img{
+  border-radius: 50%;
+  width:120px;
+  height:120px;
+  margin-bottom:10px;
+}
+
+.button-container h1{
+  font-size: 32px;
+  color: #3a2a23;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom:10px;
+
+}
+
+.button-container p{
+  font-size: 16px;
+  color: #595959;
+  margin-bottom:10px;
+}
+
+
+button {
+  display: block;
+  width: 480px; /* Reduce button size for better spacing */
+  background: linear-gradient(to right, #A68061, #d7b89e);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 30px; /* Rounded buttons */
+  margin-top: 10px;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+button:hover {
+  background: #A68061;
+  transform: scale(1.05); /* Subtle zoom effect */
+}
+
+.location-background{
+background: linear-gradient(to bottom, #f9f5f0 80%, #a68061);
+
+}
