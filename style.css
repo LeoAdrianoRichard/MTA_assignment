@@ -64,9 +64,7 @@ body {
 }
 
 .topnav a.active {
-  background-color: #b08872;
-  color: #fff;
-  border-radius: 4px;
+  color: #A68061; 
 }
 
 .topnav a.icon {
@@ -185,9 +183,10 @@ body {
   transition: background-color 0.6s ease;
 }
 
-.active {
+
+/*.active {
   background-color: #717171;
-}
+}*/
 
 .fade {
   animation-name: fade;
@@ -280,45 +279,52 @@ body {
   font-size: 18px;
 }
 
-.menus {
-  align: center;
-  margin-top: 40px;
+.menus
+{
+  text-align:center;
+  margin-top:40px;
 }
 
 .menu-list {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 15px;
-  margin-bottom: 20px;
-  margin-top: 20px;
+  gap: 20px; /* Space between the menu items */
+  margin: 40px 0; /* Add vertical spacing */
+  padding: 0;
+  list-style: none; /* Remove bullet points if using <ul> */
 }
 
 .menu {
-  background-color: #fff;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  width: 150px;
-  text-align: center;
-  border-radius: 10px;
-  margin-right: 20px;
-}
-
-.menu img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
+  cursor: pointer;
+  padding: 10px 15px;
+  margin: 5px;
+  display: inline-block;
+  font-size: 18px;
+ 
+  border-bottom: 2px solid transparent; /* Default: No line under the text */
+  transition: border-bottom 0.3s ease, color 0.3s ease;
 }
 
 .menu h3 {
   margin: 10px 0;
   font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #3a2a23; /* Darker text for better contrast */
 }
 
 .menu:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  color: #A68061; /* Highlight color on hover */
 }
+
+
+.menu.clicked {
+  color: #b08872; /* Match the highlight color */
+  border-bottom: 2px solid #b08872; /* Add brown line under the active text */
+  font-weight: 700; /* Bold the active text */
+}
+
+
 
 .hero-image {
   background-image: url("images/hero.jpg"); /* Ensure the file path is correct */
@@ -327,6 +333,8 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  margin: 3px;
+  padding: 1px;
 }
 
 .hero-text {
@@ -356,18 +364,19 @@ body {
 
 #menu-image {
   display: none;
-  width: 80%; /* Limit the width of the displayed image */
-  margin-top: 20px;
+  width: 80%;  /* Limit the width of the displayed image */
+  margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
   display: block;
+  margin-bottom:1px;
 }
 
 @media screen and (max-width: 768px) {
-  .menu {
-    width: 45%;
+  .menu-list {
+    gap: 20px; /* Adjust spacing for smaller screens */
   }
-
+  
   #menu-image {
     width: 70%;
     max-width: 500px;
@@ -375,8 +384,9 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  .menu {
-    width: 100%; /* Stack items in a single column on small screens */
+  .menu-list {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items */
   }
 
   /* Adjust displayed image size for very small screens */
@@ -389,4 +399,11 @@ body {
 .video-holder {
   position: relative;
   left: 31%;
+}
+
+footer{
+  background-color:lightgrey;
+  padding:10px 0px;
+  margin-top:10 px;
+  
 }
