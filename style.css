@@ -732,7 +732,13 @@ background: linear-gradient(to bottom, #f9f5f0 80%, #a68061);
   }
 
   .about-us button {
-    width: 100%;  /* Full-width button */
-    font-size: 14px;  /* Smaller button font size */
+    width: 100%;  
+    font-size: 14px;  
+  }
+
+  .button-container button{
+    width:300px;
+    font-size:14px;
+    
   }
 }
